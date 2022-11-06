@@ -1,6 +1,6 @@
 package Automobiles;
 
-public class DriverB extends Driver{
+public class DriverB extends Driver<PassengerCar>{
 
     public DriverB(String name, String category, int expirience) {
         super(name, category, expirience);
@@ -23,7 +23,7 @@ public class DriverB extends Driver{
 
     @Override
     public void setCategory(String category) {
-        super.setCategory("B");
+        super.setCategory(category);
     }
 
     @Override
@@ -50,5 +50,4 @@ public class DriverB extends Driver{
     public void refuel() {
 
     }
-
 }

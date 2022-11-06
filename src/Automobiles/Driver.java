@@ -1,6 +1,6 @@
 package Automobiles;
 
-public abstract class Driver <T extends Automobiles & Competing> {
+public abstract class Driver <T extends Automobiles & Competing>{
     private String name;
     private String category;
     private int expirience;
