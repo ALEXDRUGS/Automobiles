@@ -48,6 +48,7 @@ public abstract class Automobiles {
                 " л ";
     }
 
+
     public abstract void startMoving();
 
     public abstract void finishTheMove();

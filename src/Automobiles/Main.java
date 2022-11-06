@@ -28,5 +28,9 @@ public class Main {
         man.startMoving();
         man.finishTheMove();
         System.out.println(man.bestTime(25.5) + "\n" + maz.pitStop() + "\n" + tatra.maxSpeed(92.4));
+
+        DriverB<PassengerCar> misha = new DriverB<>("Миша", true, 10);
+        System.out.println("Водитель " + misha.getName() + " управляет автомобилем " + audi.getBrand() +
+                " и будет участвовать в заезде");
     }
 }
