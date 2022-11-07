@@ -1,11 +1,11 @@
 package Automobiles;
 
-public abstract class Automobiles {
+public abstract class Automobile {
     private String brand;
     private String model;
     private double engineSize;
 
-    public Automobiles(String brand, String model, double engineSize) {
+    public Automobile(String brand, String model, double engineSize) {
         this.brand = brand;
         this.model = model;
         this.engineSize = engineSize;

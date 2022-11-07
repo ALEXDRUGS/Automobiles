@@ -1,6 +1,6 @@
 package Automobiles;
 
-public class PassengerCar extends Automobiles implements Competing{
+public class PassengerCar extends Automobile implements Competing{
     public PassengerCar(String brand, String model, double engineSize) {
         super(brand, model, engineSize);
     }

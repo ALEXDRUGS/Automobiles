@@ -1,5 +1,9 @@
 package Automobiles;
 
+import drivers.DriverB;
+import drivers.DriverC;
+import drivers.DriverD;
+
 public class Main {
     public static void main(String[] args) {
         PassengerCar audi = new PassengerCar("Audi", "quattro", 2.0);
@@ -11,26 +15,32 @@ public class Main {
         audi.finishTheMove();
         System.out.println(audi.bestTime(20.0) + "\n" + audi.pitStop());
 
-        Buses ikarus = new Buses("Ikarus", "5601", 12.0);
-        Buses paz = new Buses("ПАЗ", "53-20", 10.0);
-        Buses liaz = new Buses("ЛиАЗ", "678", 11.5);
-        Buses laz = new Buses("ЛАЗ", "79321", 9.0);
+        Bus ikarus = new Bus("Ikarus", "5601", 12.0);
+        Bus paz = new Bus("ПАЗ", "53-20", 10.0);
+        Bus liaz = new Bus("ЛиАЗ", "678", 11.5);
+        Bus laz = new Bus("ЛАЗ", "79321", 9.0);
         System.out.println(ikarus + "\n" + paz + "\n" + liaz + "\n" + laz);
         ikarus.startMoving();
         ikarus.finishTheMove();
         System.out.println(ikarus.bestTime(22.0) + "\n" + ikarus.pitStop());
 
-        Tracks man = new Tracks("Man", "467", 10.0);
-        Tracks tatra = new Tracks("Tatra", "900", 15.0);
-        Tracks maz = new Tracks("MAZ", "2", 11.0);
-        Tracks kamaz = new Tracks("KamAZ", "4389", 10.0);
+        Track man = new Track("Man", "467", 10.0);
+        Track tatra = new Track("Tatra", "900", 15.0);
+        Track maz = new Track("MAZ", "2", 11.0);
+        Track kamaz = new Track("KamAZ", "4389", 10.0);
         System.out.println(man + "\n" + tatra + "\n" + maz + "\n" + kamaz);
         man.startMoving();
         man.finishTheMove();
         System.out.println(man.bestTime(25.5) + "\n" + maz.pitStop() + "\n" + tatra.maxSpeed(92.4));
 
-        DriverB misha<PassengerCar> = new DriverB<>("Миша", "B", 10);
-        System.out.println("Водитель " + misha.getName() + " управляет автомобилем " + audi.getBrand() +
-                " и будет участвовать в заезде");
+        DriverB misha = new DriverB("Миша", "B", 10, audi);
+        System.out.println(misha);
+        misha.start();
+        misha.refuel();
+        misha.finish();
+        DriverC vova = new DriverC("Вова", "C", 8, man);
+        System.out.println(vova);
+        DriverD max = new DriverD("Макс", "D", 15, ikarus);
+        System.out.println(max);
     }
 }

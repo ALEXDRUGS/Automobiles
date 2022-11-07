@@ -1,7 +1,7 @@
 package Automobiles;
 
-public class Tracks extends Automobiles implements Competing{
-    public Tracks(String brand, String model, double engineSize) {
+public class Track extends Automobile implements Competing{
+    public Track(String brand, String model, double engineSize) {
         super(brand, model, engineSize);
     }
 
