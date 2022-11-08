@@ -1,8 +1,28 @@
 package Automobiles;
 
-public class Track extends Automobile implements Competing{
+public class Track extends Automobile implements Competing {
     public Track(String brand, String model, double engineSize) {
         super(brand, model, engineSize);
+    }
+
+    public enum LoadCapacity {
+        N1(Double.MIN_VALUE, 3.5),
+        N2(3.5, 12.0),
+        N3(12.0, Double.MAX_VALUE);
+        private final double from;
+        private final double to;
+        LoadCapacity(double from, double to) {
+            this.from = from;
+            this.to = to;
+        }
+
+        public double getFrom() {
+            return from;
+        }
+
+        public double getTo() {
+            return to;
+        }
     }
 
     @Override

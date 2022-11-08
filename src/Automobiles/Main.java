@@ -15,10 +15,10 @@ public class Main {
         audi.finishTheMove();
         System.out.println(audi.bestTime(20.0) + "\n" + audi.pitStop());
 
-        Bus ikarus = new Bus("Ikarus", "5601", 12.0);
-        Bus paz = new Bus("ПАЗ", "53-20", 10.0);
-        Bus liaz = new Bus("ЛиАЗ", "678", 11.5);
-        Bus laz = new Bus("ЛАЗ", "79321", 9.0);
+        Bus ikarus = new Bus("Ikarus", "5601", 12.0, Bus.Capacity.BIG);
+        Bus paz = new Bus("ПАЗ", "53-20", 10.0, Bus.Capacity.MIDDLE);
+        Bus liaz = new Bus("ЛиАЗ", "678", 11.5, Bus.Capacity.SMALL);
+        Bus laz = new Bus("ЛАЗ", "79321", 9.0, Bus.Capacity.ESPECIALLY_BIG);
         System.out.println(ikarus + "\n" + paz + "\n" + liaz + "\n" + laz);
         ikarus.startMoving();
         ikarus.finishTheMove();
@@ -42,5 +42,6 @@ public class Main {
         System.out.println(vova);
         DriverD max = new DriverD("Макс", "D", 15, ikarus);
         System.out.println(max);
+
     }
 }

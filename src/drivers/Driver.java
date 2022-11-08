@@ -1,8 +1,9 @@
 package drivers;
 
 import Automobiles.Automobile;
+import Automobiles.Competing;
 
-public abstract class Driver<T extends Automobile> {
+public abstract class Driver<T extends Automobile & Competing> {
     private final String name;
     private final String category;
     private final int expirience;
@@ -31,22 +32,22 @@ public abstract class Driver<T extends Automobile> {
 
 
     public void start(){
-        System.out.printf("Автомобиль %s %s стартует\n", this.car.getBrand(), this.car.getModel());
+        System.out.printf("Автомобиль %s %s стартует\n", car.getBrand(), car.getModel());
     }
 
     public void finish(){
-        System.out.printf("Автомобиль %s %s финиширует\n", this.car.getBrand(), this.car.getModel());
+        System.out.printf("Автомобиль %s %s финиширует\n", car.getBrand(), car.getModel());
     }
 
     public void refuel(){
-        System.out.printf("Автомобиль %s %s на заправку\n", this.car.getBrand(), this.car.getModel());
+        System.out.printf("Автомобиль %s %s на заправку\n", car.getBrand(), car.getModel());
     }
 
     @Override
     public String toString() {
         return String.format("Водитель %s управляет автомобилем %s %s и будет участвовать в гонке.",
-                this.name,
-                this.car.getBrand(),
-                this.car.getModel());
+                name,
+                car.getBrand(),
+                car.getModel());
     }
 }

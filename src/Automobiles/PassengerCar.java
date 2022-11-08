@@ -5,6 +5,20 @@ public class PassengerCar extends Automobile implements Competing{
         super(brand, model, engineSize);
     }
 
+    public enum BodyType {
+        COUPE("купе"), CROSS_OVER("кроссовер"), HATCHBACK("хэтчбек"),
+        MINI_VAN("минивэн"), OFF_ROAD("внедорожник"),
+        PICK_UP("пикап"), SEDAN("седан"), UNIVERSAL("универсал"), WAGON("фургон");
+        private final String bodyType;
+        BodyType(String bodyType) {
+            this.bodyType = bodyType;
+        }
+
+        public String getBodyType() {
+            return this.bodyType;
+        }
+    }
+
     @Override
     public void startMoving() {
         System.out.println("start");

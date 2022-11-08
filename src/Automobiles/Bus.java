@@ -1,8 +1,39 @@
 package Automobiles;
 
-public class Bus extends Automobile implements Competing{
-    public Bus(String brand, String model, double engineSize) {
+public class Bus extends Automobile implements Competing {
+    private final Capacity busCapacity;
+
+    public Bus(String brand, String model, double engineSize, Capacity busCapacity) {
         super(brand, model, engineSize);
+        this.busCapacity = busCapacity;
+    }
+
+    public enum Capacity {
+        ESPECIALLY_SMALL(0, 10), SMALL(10, 25), MIDDLE(40, 50),
+        BIG(60, 80), ESPECIALLY_BIG(100, 120);
+        private final int from;
+        private final int to;
+
+        Capacity(int from, int to) {
+            this.from = from;
+            this.to = to;
+        }
+
+        public int getFrom() {
+            return from;
+        }
+
+        public int getTo() {
+            return to;
+        }
+    }
+
+    public void printType() {
+        if (busCapacity != null) {
+            System.out.println(this.busCapacity);
+        } else {
+            System.out.println("Информации не достаточно");
+        }
     }
 
     @Override
@@ -34,6 +65,7 @@ public class Bus extends Automobile implements Competing{
     public String toString() {
         return super.toString();
     }
+
     @Override
     public String pitStop() {
         return "PIT-STOP";
