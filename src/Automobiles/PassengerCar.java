@@ -1,15 +1,62 @@
 package Automobiles;
 
-public class PassengerCar extends Automobile implements Competing{
-    public PassengerCar(String brand, String model, double engineSize) {
+public class PassengerCar extends Automobile implements Competing {
+    String bodyType;
+
+    public PassengerCar(String brand, String model, double engineSize, String bodyType) {
         super(brand, model, engineSize);
+
+        if (bodyType.equalsIgnoreCase("СЕДАН")) {
+            this.bodyType = "седан";
+        } else {
+            if (bodyType.equalsIgnoreCase("КУПЕ")) {
+                this.bodyType = String.format(BodyType.COUPE.getBodyType());
+            } else {
+                if (bodyType.equalsIgnoreCase("КРОССОВЕР")) {
+                    this.bodyType = String.format(BodyType.CROSS_OVER.getBodyType());
+                } else {
+                    if (bodyType.equalsIgnoreCase("ХЭТЧБЭК")) {
+                        this.bodyType = String.format(BodyType.HATCHBACK.bodyType);
+                    } else {
+                        if (bodyType.equalsIgnoreCase("МИНИВЭН")) {
+                            this.bodyType = String.format(BodyType.MINI_VAN.bodyType);
+                        } else {
+                            if (bodyType.equalsIgnoreCase("ВНЕДОРОЖНИК")) {
+                                this.bodyType = String.format(BodyType.OFF_ROAD.bodyType);
+                            } else {
+                                if (bodyType.equalsIgnoreCase("ПИКАП")) {
+                                    this.bodyType = String.format(BodyType.PICK_UP.bodyType);
+                                } else {
+                                    if (bodyType.equalsIgnoreCase("УНИВЕРСАЛ")) {
+                                        this.bodyType = String.format(BodyType.UNIVERSAL.bodyType);
+                                    } else {
+                                        if (bodyType.equalsIgnoreCase("ФУРГОН")) {
+                                            this.bodyType = String.format(BodyType.WAGON.bodyType);
+                                        } else {
+                                            this.bodyType = " Информации не достаточно ";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public enum BodyType {
-        COUPE("купе"), CROSS_OVER("кроссовер"), HATCHBACK("хэтчбек"),
-        MINI_VAN("минивэн"), OFF_ROAD("внедорожник"),
-        PICK_UP("пикап"), SEDAN("седан"), UNIVERSAL("универсал"), WAGON("фургон");
+        SEDAN("седан"),
+        COUPE("купе"),
+        CROSS_OVER("кроссовер"),
+        HATCHBACK("хэтчбек"),
+        MINI_VAN("минивэн"),
+        OFF_ROAD("внедорожник"),
+        PICK_UP("пикап"),
+        UNIVERSAL("универсал"),
+        WAGON("фургон");
         private final String bodyType;
+
         BodyType(String bodyType) {
             this.bodyType = bodyType;
         }
@@ -46,7 +93,7 @@ public class PassengerCar extends Automobile implements Competing{
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + bodyType;
     }
 
     @Override

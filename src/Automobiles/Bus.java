@@ -1,16 +1,46 @@
 package Automobiles;
 
 public class Bus extends Automobile implements Competing {
-    private final Capacity busCapacity;
+    String bodyType;
 
-    public Bus(String brand, String model, double engineSize, Capacity busCapacity) {
+    public Bus(String brand, String model, double engineSize, String bodyType) {
         super(brand, model, engineSize);
-        this.busCapacity = busCapacity;
+
+        if (bodyType.equalsIgnoreCase("SMALL")) {
+            this.bodyType = String.format("Количество мест от %d до %d ", Capacity.SMALL.getFrom(),
+                    Capacity.SMALL.getTo());
+        } else {
+            if (bodyType.equalsIgnoreCase("ESPECIALLY_SMALL")) {
+                this.bodyType = String.format("Количество мест от %d до %d ", Capacity.ESPECIALLY_SMALL.getFrom(),
+                        Capacity.ESPECIALLY_SMALL.getTo());
+            } else {
+                if (bodyType.equalsIgnoreCase("MIDDLE")) {
+                    this.bodyType = String.format("Количество мест от %d до %d ", Capacity.MIDDLE.getFrom(),
+                            Capacity.MIDDLE.getTo());
+                } else {
+                    if (bodyType.equalsIgnoreCase("BIG")) {
+                        this.bodyType = String.format("Количество мест от %d до %d ", Capacity.BIG.getFrom(),
+                                Capacity.BIG.getTo());
+                    } else {
+                        if (bodyType.equalsIgnoreCase("ESPECIALLY_BIG")) {
+                            this.bodyType = String.format("Количество мест от %d до %d ", Capacity.ESPECIALLY_BIG.getFrom(),
+                                    Capacity.ESPECIALLY_BIG.getTo());
+                        } else {
+                            this.bodyType = " Информации не достаточно ";
+                        }
+                    }
+                }
+            }
+        }
     }
 
+
     public enum Capacity {
-        ESPECIALLY_SMALL(0, 10), SMALL(10, 25), MIDDLE(40, 50),
-        BIG(60, 80), ESPECIALLY_BIG(100, 120);
+        ESPECIALLY_SMALL(0, 10),
+        SMALL(10, 25),
+        MIDDLE(40, 50),
+        BIG(60, 80),
+        ESPECIALLY_BIG(100, 120);
         private final int from;
         private final int to;
 
@@ -28,13 +58,6 @@ public class Bus extends Automobile implements Competing {
         }
     }
 
-    public void printType() {
-        if (busCapacity != null) {
-            System.out.println(this.busCapacity);
-        } else {
-            System.out.println("Информации не достаточно");
-        }
-    }
 
     @Override
     public void startMoving() {
@@ -63,7 +86,7 @@ public class Bus extends Automobile implements Competing {
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + bodyType;
     }
 
     @Override

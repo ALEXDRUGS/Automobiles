@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers&#10;итоговое решение">
+    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers&#10;доделал">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Bus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,9 @@
       <workItem from="1667724429733" duration="15448000" />
       <workItem from="1667758312188" duration="12750000" />
       <workItem from="1667802706611" duration="14877000" />
-      <workItem from="1667907059043" duration="219000" />
+      <workItem from="1667907059043" duration="608000" />
+      <workItem from="1668027899836" duration="10888000" />
+      <workItem from="1668073353971" duration="28665000" />
     </task>
     <task id="LOCAL-00001" summary="Automobiles">
       <created>1667725478515</created>
@@ -112,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667808355401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Automobiles + Drivers&#10;доделал">
+      <created>1667907525356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667907525356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +141,7 @@
     <MESSAGE value="Automobiles" />
     <MESSAGE value="Automobiles + Drivers" />
     <MESSAGE value="Automobiles + Drivers&#10;итоговое решение" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers&#10;итоговое решение" />
+    <MESSAGE value="Automobiles + Drivers&#10;доделал" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers&#10;доделал" />
   </component>
 </project>
