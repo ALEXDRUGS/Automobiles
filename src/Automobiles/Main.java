@@ -42,6 +42,8 @@ public class Main {
         System.out.println(vova);
         DriverD max = new DriverD("Макс", "D", 15, ikarus);
         System.out.println(max);
-
+        ikarus.getDiagnosed(ikarus);
+        paz.getDiagnosed(paz);
+        System.out.println(max.getCategory());
     }
 }

@@ -111,4 +111,9 @@ public class Bus extends Automobile implements Competing {
         }
         return maxSpeed;
     }
+
+    @Override
+    public void getDiagnosed(Automobile getDiagnosed) {
+        super.getDiagnosed(getDiagnosed);
+    }
 }

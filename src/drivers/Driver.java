@@ -22,7 +22,11 @@ public abstract class Driver<T extends Automobile & Competing> {
 
 
     public String getCategory() {
-        return category;
+        if (category == null || category.isEmpty() || category.isBlank()) {
+            throw new RuntimeException("Необходимо указать тип прав");
+        } else {
+            return String.format("Права категории %s", category);
+        }
     }
 
 
@@ -31,15 +35,15 @@ public abstract class Driver<T extends Automobile & Competing> {
     }
 
 
-    public void start(){
+    public void start() {
         System.out.printf("Автомобиль %s %s стартует\n", car.getBrand(), car.getModel());
     }
 
-    public void finish(){
+    public void finish() {
         System.out.printf("Автомобиль %s %s финиширует\n", car.getBrand(), car.getModel());
     }
 
-    public void refuel(){
+    public void refuel() {
         System.out.printf("Автомобиль %s %s на заправку\n", car.getBrand(), car.getModel());
     }
 

@@ -48,7 +48,11 @@ public abstract class Automobile {
                 " л ";
     }
 
-
+    public void getDiagnosed(Automobile getDiagnosed) {
+        if (getDiagnosed.getClass().equals(Bus.class)) {
+            System.out.println("Автобус " + getDiagnosed + " в диагностике не нуждается");
+        }else throw new RuntimeException("Автомобиль " + getDiagnosed + " не прошёл диагностику");
+    }
     public abstract void startMoving();
 
     public abstract void finishTheMove();

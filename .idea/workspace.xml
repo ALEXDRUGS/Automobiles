@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers&#10;доделал">
+    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers&#10;исключения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobiles/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Automobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Bus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drivers/DriverB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/DriverB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drivers/DriverC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/DriverC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drivers/DriverD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/DriverD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +59,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -84,6 +90,7 @@
       <workItem from="1667907059043" duration="608000" />
       <workItem from="1668027899836" duration="10888000" />
       <workItem from="1668073353971" duration="28665000" />
+      <workItem from="1668679328700" duration="5428000" />
     </task>
     <task id="LOCAL-00001" summary="Automobiles">
       <created>1667725478515</created>
@@ -143,5 +150,9 @@
     <MESSAGE value="Automobiles + Drivers&#10;итоговое решение" />
     <MESSAGE value="Automobiles + Drivers&#10;доделал" />
     <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers&#10;доделал" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -5,4 +5,9 @@ public class DriverB extends Driver<PassengerCar> {
     public DriverB(String name, String category, int expirience, PassengerCar car) {
         super(name, category, expirience, car);
     }
+
+    @Override
+    public String getCategory() {
+        return super.getCategory();
+    }
 }
