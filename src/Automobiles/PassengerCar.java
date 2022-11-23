@@ -1,7 +1,15 @@
 package Automobiles;
 
+import drivers.Driver;
+import mechanics.Mechanic;
+import sponsors.Sponsor;
+
 public class PassengerCar extends Automobile implements Competing {
     String bodyType;
+
+    public PassengerCar(Driver driver, Sponsor sponsor, Mechanic mechanic) {
+        super(driver, sponsor, mechanic);
+    }
 
     public PassengerCar(String brand, String model, double engineSize, String bodyType) {
         super(brand, model, engineSize);
@@ -121,5 +129,10 @@ public class PassengerCar extends Automobile implements Competing {
     @Override
     public void getDiagnosed(Automobile getDiagnosed) {
         super.getDiagnosed(getDiagnosed);
+    }
+
+    @Override
+    public void getData(Automobile automobile) {
+        super.getData(automobile);
     }
 }

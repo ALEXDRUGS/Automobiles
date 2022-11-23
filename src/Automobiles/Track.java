@@ -1,8 +1,16 @@
 package Automobiles;
 
+import drivers.Driver;
+import mechanics.Mechanic;
+import sponsors.Sponsor;
+
 public class Track extends Automobile implements Competing {
 
     String loadCapacity;
+
+    public Track(Driver driver, Sponsor sponsor, Mechanic mechanic) {
+        super(driver, sponsor, mechanic);
+    }
 
     public Track(String brand, String model, double engineSize, double loadCapacity) {
         super(brand, model, engineSize);
@@ -117,9 +125,13 @@ public class Track extends Automobile implements Competing {
         }
         return maxSpeed;
     }
-
     @Override
     public void getDiagnosed(Automobile getDiagnosed) {
         super.getDiagnosed(getDiagnosed);
+    }
+
+    @Override
+    public void getData(Automobile automobile) {
+        super.getData(automobile);
     }
 }

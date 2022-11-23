@@ -3,11 +3,13 @@ package drivers;
 import Automobiles.Automobile;
 import Automobiles.Competing;
 
+import java.util.LinkedList;
+
 public abstract class Driver<T extends Automobile & Competing> {
-    private final String name;
-    private final String category;
-    private final int expirience;
-    private final T car;
+    private String name;
+    private String category;
+    private int expirience;
+    private T car;
 
     protected Driver(String name, String category, int expirience, T car) {
         this.name = name;
@@ -15,11 +17,19 @@ public abstract class Driver<T extends Automobile & Competing> {
         this.expirience = expirience;
         this.car = car;
     }
+    private LinkedList<Driver> driverLinkedList;
+
+    public Driver(LinkedList<Driver> driverLinkedList) {
+        this.driverLinkedList = driverLinkedList;
+    }
+
+    public LinkedList<Driver> getDriverLinkedList() {
+        return driverLinkedList;
+    }
 
     public String getName() {
         return name;
     }
-
 
     public String getCategory() {
         if (category == null || category.isEmpty() || category.isBlank()) {
@@ -54,4 +64,5 @@ public abstract class Driver<T extends Automobile & Competing> {
                 car.getBrand(),
                 car.getModel());
     }
+
 }

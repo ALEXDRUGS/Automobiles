@@ -1,11 +1,18 @@
 package Automobiles;
 
+import drivers.Driver;
+import mechanics.Mechanic;
+import sponsors.Sponsor;
+
 public class Bus extends Automobile implements Competing {
     String bodyType;
 
+    public Bus(Driver driver, Sponsor sponsor, Mechanic mechanic) {
+        super(driver, sponsor, mechanic);
+    }
+
     public Bus(String brand, String model, double engineSize, String bodyType) {
         super(brand, model, engineSize);
-
         if (bodyType.equalsIgnoreCase("SMALL")) {
             this.bodyType = String.format("Количество мест от %d до %d ", Capacity.SMALL.getFrom(),
                     Capacity.SMALL.getTo());
@@ -115,5 +122,10 @@ public class Bus extends Automobile implements Competing {
     @Override
     public void getDiagnosed(Automobile getDiagnosed) {
         super.getDiagnosed(getDiagnosed);
+    }
+
+    @Override
+    public void getData(Automobile automobile) {
+        super.getData(automobile);
     }
 }

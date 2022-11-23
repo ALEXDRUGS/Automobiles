@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers&#10;исключения">
+      <change afterPath="$PROJECT_DIR$/src/mechanics/Mechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sponsors/Sponsor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Automobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Bus.java" afterDir="false" />
@@ -9,9 +11,6 @@
       <change beforePath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Track.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drivers/DriverB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/DriverB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drivers/DriverC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/DriverC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drivers/DriverD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/DriverD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +55,17 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alex/IdeaProjects/Data&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="mechanics" />
       <recent name="drivers" />
       <recent name="src" />
     </key>
@@ -91,6 +92,11 @@
       <workItem from="1668027899836" duration="10888000" />
       <workItem from="1668073353971" duration="28665000" />
       <workItem from="1668679328700" duration="5428000" />
+      <workItem from="1668689833907" duration="1015000" />
+      <workItem from="1668929761480" duration="19266000" />
+      <workItem from="1669029065459" duration="6880000" />
+      <workItem from="1669039929553" duration="11098000" />
+      <workItem from="1669189263492" duration="4562000" />
     </task>
     <task id="LOCAL-00001" summary="Automobiles">
       <created>1667725478515</created>
@@ -127,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667907525356</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Automobiles + Drivers&#10;исключения">
+      <created>1668690301683</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668690301683</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +162,8 @@
     <MESSAGE value="Automobiles + Drivers" />
     <MESSAGE value="Automobiles + Drivers&#10;итоговое решение" />
     <MESSAGE value="Automobiles + Drivers&#10;доделал" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers&#10;доделал" />
+    <MESSAGE value="Automobiles + Drivers&#10;исключения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers&#10;исключения" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
