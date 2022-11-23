@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers&#10;исключения">
-      <change afterPath="$PROJECT_DIR$/src/mechanics/Mechanic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sponsors/Sponsor.java" afterDir="false" />
+    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers + Sponsors + Mechanics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Automobiles/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Automobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Automobiles/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Bus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Automobiles/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Automobiles/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +89,7 @@
       <workItem from="1668929761480" duration="19266000" />
       <workItem from="1669029065459" duration="6880000" />
       <workItem from="1669039929553" duration="11098000" />
-      <workItem from="1669189263492" duration="4562000" />
+      <workItem from="1669189263492" duration="5487000" />
     </task>
     <task id="LOCAL-00001" summary="Automobiles">
       <created>1667725478515</created>
@@ -140,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668690301683</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Automobiles + Drivers + Sponsors + Mechanics">
+      <created>1669195915580</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669195915580</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +163,8 @@
     <MESSAGE value="Automobiles + Drivers&#10;итоговое решение" />
     <MESSAGE value="Automobiles + Drivers&#10;доделал" />
     <MESSAGE value="Automobiles + Drivers&#10;исключения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers&#10;исключения" />
+    <MESSAGE value="Automobiles + Drivers + Sponsors + Mechanics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers + Sponsors + Mechanics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -14,6 +14,7 @@ public class Main {
         LinkedList<Automobile> linkedList = new LinkedList<>();
         LinkedList<Sponsor> sponsorLinkedList = new LinkedList<>();
         LinkedList<Driver> driverLinkedList = new LinkedList<>();
+        LinkedList<Mechanic> mechanicLinkedList = new LinkedList<>();
 
         Sponsor lukoil = new Sponsor("Лукойл", 100);
         Sponsor a = new Sponsor("A", 250);
@@ -159,6 +160,10 @@ public class Main {
         Mechanic<PassengerCar> petya = new Mechanic<>("Петя Васечкин", "Rem", audi);
         Mechanic<Track> jora = new Mechanic<>("Жора Пушкин", "оотирр", man);
         Mechanic<Automobile> kolya = new Mechanic<>("Коля Дуров", "полрдбь", mazda);
+        mechanicLinkedList.add(vasya);
+        mechanicLinkedList.add(petya);
+        mechanicLinkedList.add(jora);
+        mechanicLinkedList.add(kolya);
         ikarus = new Bus(max, lukoil, vasya);
         ikarus.getData(ikarus);
 
