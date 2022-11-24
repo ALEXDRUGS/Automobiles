@@ -5,16 +5,18 @@ import drivers.DriverB;
 import drivers.DriverC;
 import drivers.DriverD;
 import mechanics.Mechanic;
+import services.ServiceStation;
 import sponsors.Sponsor;
 
 import java.util.LinkedList;
 
 public class Main {
+    public static LinkedList<Automobile> automobileLinkedList = new LinkedList<>();
+    static LinkedList<Sponsor> sponsorLinkedList = new LinkedList<>();
+    static LinkedList<Driver> driverLinkedList = new LinkedList<>();
+    static LinkedList<Mechanic> mechanicLinkedList = new LinkedList<>();
     public static void main(String[] args) {
-        LinkedList<Automobile> linkedList = new LinkedList<>();
-        LinkedList<Sponsor> sponsorLinkedList = new LinkedList<>();
-        LinkedList<Driver> driverLinkedList = new LinkedList<>();
-        LinkedList<Mechanic> mechanicLinkedList = new LinkedList<>();
+
 
         Sponsor lukoil = new Sponsor("Лукойл", 100);
         Sponsor a = new Sponsor("A", 250);
@@ -75,10 +77,10 @@ public class Main {
         audi.startMoving();
         audi.finishTheMove();
         System.out.println(audi.bestTime(20.0) + "\n" + audi.pitStop());
-        linkedList.add(audi);
-        linkedList.add(vw);
-        linkedList.add(mazda);
-        linkedList.add(ford);
+        automobileLinkedList.add(audi);
+        automobileLinkedList.add(vw);
+        automobileLinkedList.add(mazda);
+        automobileLinkedList.add(ford);
 
         Bus ikarus = new Bus("Ikarus", "5601", 12.0, "BIG");
         Bus paz = new Bus("ПАЗ", "53-20", 10.0, "MIDDLE");
@@ -88,10 +90,10 @@ public class Main {
         ikarus.startMoving();
         ikarus.finishTheMove();
         System.out.println(ikarus.bestTime(22.0) + "\n" + ikarus.pitStop());
-        linkedList.add(ikarus);
-        linkedList.add(paz);
-        linkedList.add(liaz);
-        linkedList.add(laz);
+        automobileLinkedList.add(ikarus);
+        automobileLinkedList.add(paz);
+        automobileLinkedList.add(liaz);
+        automobileLinkedList.add(laz);
 
 
         Track man = new Track("Man", "467", 10.0, 10.0);
@@ -103,10 +105,10 @@ public class Main {
         man.finishTheMove();
 
         System.out.println(man.bestTime(25.5) + "\n" + maz.pitStop() + "\n" + tatra.maxSpeed(92.4));
-        linkedList.add(man);
-        linkedList.add(tatra);
-        linkedList.add(maz);
-        linkedList.add(kamaz);
+        automobileLinkedList.add(man);
+        automobileLinkedList.add(tatra);
+        automobileLinkedList.add(maz);
+        automobileLinkedList.add(kamaz);
 
         DriverB misha = new DriverB("Миша", "B", 10, audi);
         DriverB masha = new DriverB("Маша", "B", 10, vw);
@@ -144,7 +146,7 @@ public class Main {
         driverLinkedList.add(fima);
 
 
-        System.out.println(linkedList);
+        System.out.println(automobileLinkedList);
 
         System.out.println(max + " " + max.getCategory()
                 + " спонсоры " + sponsorLinkedList.get(0)
@@ -166,6 +168,8 @@ public class Main {
         mechanicLinkedList.add(kolya);
         ikarus = new Bus(max, lukoil, vasya);
         ikarus.getData(ikarus);
-
+        ServiceStation <Bus> serviceStation = new ServiceStation<>();
+        serviceStation.addCars(ikarus);
+        serviceStation.techService();
     }
 }
