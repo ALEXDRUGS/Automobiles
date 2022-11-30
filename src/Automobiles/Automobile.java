@@ -4,15 +4,17 @@ import drivers.Driver;
 import mechanics.Mechanic;
 import sponsors.Sponsor;
 
-import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Set;
 
 public abstract class Automobile {
     private String brand;
     private String model;
-    private double engineSize;
+    private Double engineSize;
     private Driver driver;
     private Sponsor sponsor;
     private Mechanic mechanic;
+    private Automobile getDiagnosed;
 
     public Automobile(Driver driver, Sponsor sponsor, Mechanic mechanic) {
         this.driver = driver;
@@ -20,22 +22,22 @@ public abstract class Automobile {
         this.mechanic = mechanic;
     }
 
-    public Automobile(String brand, String model, double engineSize) {
+    public Automobile(String brand, String model, Double engineSize) {
         this.brand = brand;
         this.model = model;
         this.engineSize = engineSize;
-        this.automobileLinkedList = new LinkedList<>();
+       // this.automobileSet = new HashSet<>();
     }
 
-    private LinkedList<Automobile> automobileLinkedList;
+    private Set<Automobile> automobileSet;
 
 
-    public Automobile(LinkedList<Automobile> automobileLinkedList) {
-        this.automobileLinkedList = automobileLinkedList;
+    public Automobile(Set<Automobile> automobileSet) {
+        this.automobileSet = automobileSet;
     }
 
-    public LinkedList<Automobile> getAutomobileLinkedList() {
-        return automobileLinkedList;
+    public Set<Automobile> getAutomobileSet() {
+        return automobileSet;
     }
 
     public String getBrand() {
@@ -62,7 +64,7 @@ public abstract class Automobile {
         return engineSize;
     }
 
-    public void setEngineSize(double engineSize) {
+    public void setEngineSize(Double engineSize) {
         if (engineSize > 0) {
             this.engineSize = engineSize;
         }
@@ -75,8 +77,22 @@ public abstract class Automobile {
                 " л ";
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Automobile that = (Automobile) o;
+        return Double.compare(that.engineSize, engineSize) == 0 && brand.equals(that.brand) && model.equals(that.model) && driver.equals(that.driver) && sponsor.equals(that.sponsor) && mechanic.equals(that.mechanic) && automobileSet.equals(that.automobileSet);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, model, engineSize, driver, sponsor, mechanic, automobileSet);
+    }
+
     public void getDiagnosed(Automobile getDiagnosed) {
         if (getDiagnosed.getClass().equals(Bus.class)) {
+            this.getDiagnosed = getDiagnosed;
             System.out.println("Автобус " + getDiagnosed + " в диагностике не нуждается");
         } else throw new RuntimeException("Автомобиль " + getDiagnosed + " не прошёл диагностику");
     }

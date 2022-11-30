@@ -8,13 +8,16 @@ import mechanics.Mechanic;
 import services.ServiceStation;
 import sponsors.Sponsor;
 
-import java.util.LinkedList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
-    public static LinkedList<Automobile> automobileLinkedList = new LinkedList<>();
-    static LinkedList<Sponsor> sponsorLinkedList = new LinkedList<>();
-    static LinkedList<Driver> driverLinkedList = new LinkedList<>();
-    static LinkedList<Mechanic> mechanicLinkedList = new LinkedList<>();
+    public static Set<Automobile> automobileSet = new HashSet<>();
+    static Set<Sponsor> sponsorSet = new HashSet<>();
+    static Set<Driver> driverSet = new HashSet<>();
+    static Set<Mechanic> mechanicSet = new HashSet<>();
+
+
     public static void main(String[] args) {
 
 
@@ -44,30 +47,30 @@ public class Main {
         Sponsor w = new Sponsor("W", 71);
         lukoil.sponsorRace();
 
-        sponsorLinkedList.add(lukoil);
-        sponsorLinkedList.add(a);
-        sponsorLinkedList.add(b);
-        sponsorLinkedList.add(c);
-        sponsorLinkedList.add(d);
-        sponsorLinkedList.add(e);
-        sponsorLinkedList.add(f);
-        sponsorLinkedList.add(g);
-        sponsorLinkedList.add(h);
-        sponsorLinkedList.add(i);
-        sponsorLinkedList.add(j);
-        sponsorLinkedList.add(k);
-        sponsorLinkedList.add(l);
-        sponsorLinkedList.add(m);
-        sponsorLinkedList.add(n);
-        sponsorLinkedList.add(o);
-        sponsorLinkedList.add(p);
-        sponsorLinkedList.add(q);
-        sponsorLinkedList.add(r);
-        sponsorLinkedList.add(s);
-        sponsorLinkedList.add(t);
-        sponsorLinkedList.add(u);
-        sponsorLinkedList.add(v);
-        sponsorLinkedList.add(w);
+        sponsorSet.add(lukoil);
+        sponsorSet.add(a);
+        sponsorSet.add(b);
+        sponsorSet.add(c);
+        sponsorSet.add(d);
+        sponsorSet.add(e);
+        sponsorSet.add(f);
+        sponsorSet.add(g);
+        sponsorSet.add(h);
+        sponsorSet.add(i);
+        sponsorSet.add(j);
+        sponsorSet.add(k);
+        sponsorSet.add(l);
+        sponsorSet.add(m);
+        sponsorSet.add(n);
+        sponsorSet.add(o);
+        sponsorSet.add(p);
+        sponsorSet.add(q);
+        sponsorSet.add(r);
+        sponsorSet.add(s);
+        sponsorSet.add(t);
+        sponsorSet.add(u);
+        sponsorSet.add(v);
+        sponsorSet.add(w);
 
         PassengerCar audi = new PassengerCar("Audi", "quattro", 2.0, "седан");
         PassengerCar vw = new PassengerCar("Volkswagen", "Golf", 1.8, "хэтчбэк");
@@ -77,10 +80,10 @@ public class Main {
         audi.startMoving();
         audi.finishTheMove();
         System.out.println(audi.bestTime(20.0) + "\n" + audi.pitStop());
-        automobileLinkedList.add(audi);
-        automobileLinkedList.add(vw);
-        automobileLinkedList.add(mazda);
-        automobileLinkedList.add(ford);
+        automobileSet.add(audi);
+        automobileSet.add(vw);
+        automobileSet.add(mazda);
+        automobileSet.add(ford);
 
         Bus ikarus = new Bus("Ikarus", "5601", 12.0, "BIG");
         Bus paz = new Bus("ПАЗ", "53-20", 10.0, "MIDDLE");
@@ -90,10 +93,10 @@ public class Main {
         ikarus.startMoving();
         ikarus.finishTheMove();
         System.out.println(ikarus.bestTime(22.0) + "\n" + ikarus.pitStop());
-        automobileLinkedList.add(ikarus);
-        automobileLinkedList.add(paz);
-        automobileLinkedList.add(liaz);
-        automobileLinkedList.add(laz);
+        automobileSet.add(ikarus);
+        automobileSet.add(paz);
+        automobileSet.add(liaz);
+        automobileSet.add(laz);
 
 
         Track man = new Track("Man", "467", 10.0, 10.0);
@@ -105,10 +108,11 @@ public class Main {
         man.finishTheMove();
 
         System.out.println(man.bestTime(25.5) + "\n" + maz.pitStop() + "\n" + tatra.maxSpeed(92.4));
-        automobileLinkedList.add(man);
-        automobileLinkedList.add(tatra);
-        automobileLinkedList.add(maz);
-        automobileLinkedList.add(kamaz);
+        automobileSet.add(man);
+        automobileSet.add(tatra);
+        automobileSet.add(maz);
+        automobileSet.add(kamaz);
+        automobileSet.add(kamaz);
 
         DriverB misha = new DriverB("Миша", "B", 10, audi);
         DriverB masha = new DriverB("Маша", "B", 10, vw);
@@ -132,40 +136,40 @@ public class Main {
         DriverD dima = new DriverD("Дима", "D", 8, liaz);
         DriverD fima = new DriverD("Фима", "D", 8, laz);
 
-        driverLinkedList.add(misha);
-        driverLinkedList.add(masha);
-        driverLinkedList.add(bob);
-        driverLinkedList.add(chip);
-        driverLinkedList.add(vova);
-        driverLinkedList.add(vika);
-        driverLinkedList.add(dik);
-        driverLinkedList.add(leo);
-        driverLinkedList.add(max);
-        driverLinkedList.add(tima);
-        driverLinkedList.add(dima);
-        driverLinkedList.add(fima);
+        driverSet.add(misha);
+        driverSet.add(masha);
+        driverSet.add(bob);
+        driverSet.add(chip);
+        driverSet.add(vova);
+        driverSet.add(vika);
+        driverSet.add(dik);
+        driverSet.add(leo);
+        driverSet.add(max);
+        driverSet.add(tima);
+        driverSet.add(dima);
+        driverSet.add(fima);
 
 
-        System.out.println(automobileLinkedList);
+        System.out.println(automobileSet);
 
         System.out.println(max + " " + max.getCategory()
-                + " спонсоры " + sponsorLinkedList.get(0)
-                + " сумма спонсирования " + sponsorLinkedList.get(0).getSumSupport()
-                + " тугриков, " + sponsorLinkedList.get(1)
-                + " сумма спонсирования " + sponsorLinkedList.get(1).getSumSupport()
+                + " спонсоры " + sponsorSet.iterator().next()
+                + " сумма спонсирования " + sponsorSet.iterator().next().getSumSupport()
+                + " тугриков, " + sponsorSet.iterator().next()
+                + " сумма спонсирования " + sponsorSet.iterator().next().getSumSupport()
                 + " тугриков");
-        System.out.println(vova + " " + vova.getCategory() + " спонсоры " + sponsorLinkedList.get(2) + ", " + sponsorLinkedList.get(3));
-        System.out.println(misha + " " + misha.getCategory() + " спонсоры " + sponsorLinkedList.get(4) + ", " + sponsorLinkedList.get(5));
+        System.out.println(vova + " " + vova.getCategory() + " спонсоры " + sponsorSet.iterator().next() + ", " + sponsorSet.iterator().next());
+        System.out.println(misha + " " + misha.getCategory() + " спонсоры " + sponsorSet.iterator().next() + ", " + sponsorSet.iterator().next());
         ikarus.getDiagnosed(ikarus);
 
         Mechanic<Bus> vasya = new Mechanic<>("Вася Пупкин", "Trans", ikarus);
         Mechanic<PassengerCar> petya = new Mechanic<>("Петя Васечкин", "Rem", audi);
         Mechanic<Track> jora = new Mechanic<>("Жора Пушкин", "оотирр", man);
         Mechanic<Automobile> kolya = new Mechanic<>("Коля Дуров", "полрдбь", mazda);
-        mechanicLinkedList.add(vasya);
-        mechanicLinkedList.add(petya);
-        mechanicLinkedList.add(jora);
-        mechanicLinkedList.add(kolya);
+        mechanicSet.add(vasya);
+        mechanicSet.add(petya);
+        mechanicSet.add(jora);
+        mechanicSet.add(kolya);
         ikarus = new Bus(max, lukoil, vasya);
         ikarus.getData(ikarus);
         ServiceStation <Bus> serviceStation = new ServiceStation<>();

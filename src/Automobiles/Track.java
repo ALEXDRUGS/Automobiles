@@ -12,7 +12,7 @@ public class Track extends Automobile implements Competing {
         super(driver, sponsor, mechanic);
     }
 
-    public Track(String brand, String model, double engineSize, double loadCapacity) {
+    public Track(String brand, String model, Double engineSize, Double loadCapacity) {
         super(brand, model, engineSize);
         if (loadCapacity < LoadCapacity.N1.getTo()) {
             this.loadCapacity = String.format("Грузоподъёмность от %s до %s ",
@@ -94,7 +94,7 @@ public class Track extends Automobile implements Competing {
     }
 
     @Override
-    public void setEngineSize(double engineSize) {
+    public void setEngineSize(Double engineSize) {
         super.setEngineSize(engineSize);
     }
 

@@ -2,6 +2,8 @@ package mechanics;
 
 import Automobiles.Automobile;
 
+import java.util.Objects;
+
 public class Mechanic<B extends Automobile> {
     private String fullName;
     private String firma;
@@ -41,6 +43,19 @@ public class Mechanic<B extends Automobile> {
     @Override
     public String toString() {
         return "Механик " + fullName + " фирма " + "\"" + firma + "\"";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mechanic<?> mechanic = (Mechanic<?>) o;
+        return fullName.equals(mechanic.fullName) && firma.equals(mechanic.firma) && car.equals(mechanic.car);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(fullName, firma, car);
     }
 
     public void carryOutMaintenance() {

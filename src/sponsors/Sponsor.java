@@ -1,12 +1,13 @@
 package sponsors;
 
-import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Set;
 
 public class Sponsor {
     private String sponsor;
-    private int sumSupport;
+    private Integer sumSupport;
 
-    public Sponsor(String sponsor, int sumSupport) {
+    public Sponsor(String sponsor, Integer sumSupport) {
         this.sponsor = sponsor;
         this.sumSupport = sumSupport;
     }
@@ -23,19 +24,44 @@ public class Sponsor {
         return sumSupport;
     }
 
-    private LinkedList<Sponsor> sponsorLinkedList;
+    private Set<Sponsor> sponsorSet;
 
-    public Sponsor(LinkedList<Sponsor> sponsorLinkedList) {
-        this.sponsorLinkedList = sponsorLinkedList;
+    public Sponsor(Set<Sponsor> sponsorSet) {
+        this.sponsorSet = sponsorSet;
     }
 
-    public LinkedList<Sponsor> getSponsorLinkedList() {
-        return sponsorLinkedList;
+    public Set<Sponsor> getSponsorSet() {
+        return sponsorSet;
     }
 
     @Override
     public String toString() {
         return "Спонсор " + sponsor;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sponsor sponsor1 = (Sponsor) o;
+        return sumSupport == sponsor1.sumSupport && sponsor.equals(sponsor1.sponsor) && sponsorSet.equals(sponsor1.sponsorSet);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(sponsor, sumSupport, sponsorSet);
+    }
+
+    public void setSponsor(String sponsor) {
+        this.sponsor = sponsor;
+    }
+
+    public void setSumSupport(Integer sumSupport) {
+        this.sumSupport = sumSupport;
+    }
+
+    public void setSponsorSet(Set<Sponsor> sponsorSet) {
+        this.sponsorSet = sponsorSet;
     }
 
     public void sponsorRace() {

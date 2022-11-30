@@ -3,28 +3,29 @@ package drivers;
 import Automobiles.Automobile;
 import Automobiles.Competing;
 
-import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Set;
 
 public abstract class Driver<T extends Automobile & Competing> {
     private String name;
     private String category;
-    private int expirience;
+    private Integer expirience;
     private T car;
 
-    protected Driver(String name, String category, int expirience, T car) {
+    protected Driver(String name, String category, Integer expirience, T car) {
         this.name = name;
         this.category = category;
         this.expirience = expirience;
         this.car = car;
     }
-    private LinkedList<Driver> driverLinkedList;
+    private Set<Driver> driverSet;
 
-    public Driver(LinkedList<Driver> driverLinkedList) {
-        this.driverLinkedList = driverLinkedList;
+    public Driver(Set<Driver> driverSet) {
+        this.driverSet = driverSet;
     }
 
-    public LinkedList<Driver> getDriverLinkedList() {
-        return driverLinkedList;
+    public Set<Driver> getDriverSet() {
+        return driverSet;
     }
 
     public String getName() {
@@ -65,4 +66,16 @@ public abstract class Driver<T extends Automobile & Competing> {
                 car.getModel());
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Driver<?> driver = (Driver<?>) o;
+        return expirience == driver.expirience && name.equals(driver.name) && category.equals(driver.category) && car.equals(driver.car) && driverSet.equals(driver.driverSet);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, category, expirience, car, driverSet);
+    }
 }
