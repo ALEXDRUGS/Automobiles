@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automobiles.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Automobiles/Automobiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Automobiles/Buses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Automobiles/Competing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Automobiles/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Automobiles/PassengerCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Automobiles/Tracks.java" afterDir="false" />
+    <list default="true" id="d5f19186-c0c2-44fd-89a0-6a656dc2c9bf" name="Changes" comment="Automobiles + Drivers + Sponsors + Mechanics + Service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobiles/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobiles/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobiles/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automobiles/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automobiles/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mechanics/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mechanics/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ServiceStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServiceStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sponsors/Sponsor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sponsors/Sponsor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,11 +52,30 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alex/IdeaProjects/Automobiles&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mechanics" />
+      <recent name="drivers" />
+      <recent name="src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Automobiles" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,8 +85,79 @@
       <option name="presentableId" value="Default" />
       <updated>1667686831166</updated>
       <workItem from="1667686839204" duration="5907000" />
-      <workItem from="1667724429733" duration="715000" />
+      <workItem from="1667724429733" duration="15448000" />
+      <workItem from="1667758312188" duration="12750000" />
+      <workItem from="1667802706611" duration="14877000" />
+      <workItem from="1667907059043" duration="608000" />
+      <workItem from="1668027899836" duration="10888000" />
+      <workItem from="1668073353971" duration="28665000" />
+      <workItem from="1668679328700" duration="5428000" />
+      <workItem from="1668689833907" duration="1015000" />
+      <workItem from="1668929761480" duration="19266000" />
+      <workItem from="1669029065459" duration="6880000" />
+      <workItem from="1669039929553" duration="11098000" />
+      <workItem from="1669189263492" duration="5487000" />
+      <workItem from="1669240295308" duration="16170000" />
+      <workItem from="1669799287825" duration="70000" />
+      <workItem from="1669814621196" duration="3397000" />
     </task>
+    <task id="LOCAL-00001" summary="Automobiles">
+      <created>1667725478515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667725478515</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Automobiles + Drivers">
+      <created>1667763329568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667763329568</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Automobiles + Drivers">
+      <created>1667767579947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667767579947</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Automobiles + Drivers&#10;итоговое решение">
+      <created>1667808355401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667808355401</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Automobiles + Drivers&#10;доделал">
+      <created>1667907525356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667907525356</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Automobiles + Drivers&#10;исключения">
+      <created>1668690301683</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668690301683</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Automobiles + Drivers + Sponsors + Mechanics">
+      <created>1669195915580</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669195915580</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Automobiles + Drivers + Sponsors + Mechanics + Service">
+      <created>1669252489818</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669252489927</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,5 +173,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Automobiles" />
+    <MESSAGE value="Automobiles + Drivers" />
+    <MESSAGE value="Automobiles + Drivers&#10;итоговое решение" />
+    <MESSAGE value="Automobiles + Drivers&#10;доделал" />
+    <MESSAGE value="Automobiles + Drivers&#10;исключения" />
+    <MESSAGE value="Automobiles + Drivers + Sponsors + Mechanics" />
+    <MESSAGE value="Automobiles + Drivers + Sponsors + Mechanics + Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automobiles + Drivers + Sponsors + Mechanics + Service" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
